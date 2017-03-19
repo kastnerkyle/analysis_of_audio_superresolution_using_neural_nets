@@ -17,7 +17,6 @@ kwargs = {"interpolation":None,
         "noverlap":noverlap,
         "NFFT":nfft,
         "cmap":"gray"}
-ml = min(len(d1), len(d2))
 axarr[0].specgram(d1, **kwargs)
 axarr[0].set_title(fname1)
 axarr[1].specgram(d2, **kwargs)
